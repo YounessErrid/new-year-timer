@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('timer_bg.jpg');
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+h1{
+    font-size: 4rem;
+    margin-top: -10rem;
+    font-weight: bold;
+    font-style: italic;
+    color:white;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+}
+.big-text{
+    font-size: 6rem;
+    line-height: 1;
+    margin: 0 2rem;
+    font-weight: bold;
+    color: white;
+}
+#seconds {
+    color: rgb(179, 32, 105);
+}
+.countdown-container{
+    display: flex;
+}
+.countdown-t {
+    text-align: center;
+}
+.countdown-t span {
+    font-size: 1.5rem;
+    color: wheat;
+    text-transform: capitalize;
+}
+.copyr{
+    color: wheat;
+    position: absolute;
+    bottom: 10px;
+}
+@media screen and (max-width: 992px){
+    .big-text{
+        font-size: 3rem;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    .copyr{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 600px){
+    .big-text ,h1 {
+        font-size: 2rem;
+    }
+    .countdown-t span , .copyr{
+        font-size: 1rem;
+    }
+
+}
