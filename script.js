@@ -22,7 +22,7 @@ function countdown(){
     ss.innerHTML = timeFormat(seconds);
 }
 function timeFormat(time){
-    return time < 10 ? "0"+${time} : time ;
+    return time < 10 ? "0"+time : time ;
 }
 countdown();
 setInterval(countdown , 1000);
