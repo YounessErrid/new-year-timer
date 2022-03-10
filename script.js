@@ -16,13 +16,13 @@ function countdown(){
     const mins = Math.floor(Tseconds / 60) % 60;
     const seconds = Math.floor(Tseconds) % 60;
     
-    dd.innerHTML = days;
-    hh.innerHTML = timeFormat(hours);
-    mm.innerHTML = timeFormat(mins);
-    ss.innerHTML = timeFormat(seconds);
+  dd.innerHTML = days;
+  hh.innerHTML = timeFormat(hours);
+  mm.innerHTML = timeFormat(mins);
+  ss.innerHTML = timeFormat(seconds);
 }
-function timeFormat(time){
-    return time < 10 ? '0'+time : time ;
+function timeFormat(time) {
+  return time < 10 ? "0" + time : time;
 }
 countdown();
 setInterval(countdown , 1000);
